@@ -1,0 +1,22 @@
+#header {
+
+  text-align : center;
+}
+body{
+background-image: url("../static/What-is-an-immovable-property-FB-1200x700-compressed.jpg");
+
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#central{
+  text-align: center;
+  background-color : rgba(255,255,255,0.5)
+
+
+}
+

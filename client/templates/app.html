@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', filename='app.css') }}" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<div class='container'>
+
+    <div id="header">
+        <h1>WELCOME!</h1>
+        <h3>Enter the details of your dream house to see its estimated price
+    </h3>
+
+    </div>
+
+
+    <div id="central">
+
+        <form action="{{url_for ('send_data') }}" id="form" method="POST">
+        <h2>Area(in sqft)</h2>
+        <input type="text" id="total_sqft" name="total_sqft" placeholder="1000" required><br>
+
+        <h2>BHK</h2>
+        <input type="radio" id="radio-bhk-1" name="bhk" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="bhk" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="bhk" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="bhk" value="4"/>
+		<label for="radio-bhk-4">4</label>
+		<input type="radio" id="radio-bhk-5" name="bhk" value="5"/>
+		<label for="radio-bhk-5">5</label>
+
+        <h2>Bath</h2>
+        <input type="radio" id="radio-bath-1" name="bath" value="1"/>
+		<label for="radio-bath-1">1</label>
+		<input type="radio" id="radio-bath-2" name="bath" value="2" checked/>
+		<label for="radio-bath-2">2</label>
+		<input type="radio" id="radio-bath-3" name="bath" value="3"/>
+		<label for="radio-bath-3">3</label>
+		<input type="radio" id="radio-bath-4" name="bath" value="4"/>
+		<label for="radio-bath-4">4</label>
+		<input type="radio" id="radio-bath-5" name="bath" value="5"/>
+		<label for="radio-bath-5">5</label>
+
+        <h2>Balcony</h2>
+        <input type="radio" id="radio-bal-1" name="balcony" value="1"/>
+		<label for="radio-bal-1">1</label>
+		<input type="radio" id="radio-bal-2" name="balcony" value="2" checked/>
+		<label for="radio-bal-2">2</label>
+		<input type="radio" id="radio-bal-3" name="balcony" value="3"/>
+		<label for="radio-bal-3">3</label>
+		<input type="radio" id="radio-bal-4" name="balcony" value="4"/>
+		<label for="radio-bal-4">4</label>
+		<input type="radio" id="radio-bal-5" name="balcony" value="5"/>
+		<label for="radio-bal-5">5</label>
+
+        <h2>Location</h2>
+        <select name="location" id="location">
+            <option value="test1">test1</option>
+            <option value="test2">test2</option>
+
+
+        </select><br>
+
+
+
+
+
+        <input style='padding-top: 5px;padding-bottom: 5px;margin-top:20px;margin-bottom:20px' type="submit" onclick="" value="Check Price">
+
+
+
+
+    </form>
+
+        {% if pred_price is not none %}
+
+
+
+        <div id="answer" >
+
+            <h2>The predicted price is {{ pred_price }}</h2>
+
+        </div>
+
+
+
+
+
+        {% endif %}
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>
