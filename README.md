@@ -1,4 +1,4 @@
-# Learning-
+# Learning- Complete ML model
 This is a project that is meant to learn best in industry practices about Linear Regression
  #### Making the model:
  - We Preprocess by dropping irrelevant columns, and fill the na values where possible and drop some na values
