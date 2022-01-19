@@ -12,7 +12,7 @@ This is a project that is meant to learn best in industry practices about Linear
  - The server is made using flask in python (The models are not copied again in the server folder)
  - The server has a main page named server.py that redirects the requests and the prediction and other data processing id done in the util.py page
  - '/predict_home_price' is the route that recives the requests and returns a json with the key 'estimated price' 
- - We also have the /get_loation_names' the returns the location names which can be used to be displayed in the form as drop down 
+ - We also have the /get_loation_names' that returns the location names with key value 'location' which can be used to be displayed in the form as drop down 
  - the util has two methods one loads the artifacts i.e the odel and column names(column names are necessary while predicting as our model has dummies)
  - The other method predicts the estimated price
  
