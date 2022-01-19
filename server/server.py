@@ -26,7 +26,7 @@ def predict_home_price():
             'estimated_price': util.get_estimated_price(location,bhk,total_sqft,bath,balcony)
         }
     )
-    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Origin', '*') #Allows cross origin
 
     return response
 
