@@ -21,7 +21,7 @@ This is a project that is meant to learn best in industry practices about Linear
  - The app.py redirects requests, we send the variable pred_price to the html page usign jinja2 of flask
  - The html page contains the form which when submitted calls '/send_data' routine
  - The send_data collects the form data converts it to dictionary and sends it to the flask server usign requests.post method
- - ##Load the column names from the server
+ - The app first loads the location name and the location names are added using jinja template
  
  
  
