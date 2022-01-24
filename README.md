@@ -22,6 +22,10 @@ This is a project that is meant to learn best in industry practices about Linear
  - The html page contains the form which when submitted calls '/send_data' routine
  - The send_data collects the form data converts it to dictionary and sends it to the flask server usign requests.post method
  - The app first loads the location name and the location names are added using jinja template
+
+
+#### Changes that can be done
+- Making the UI better
  
  
  
