@@ -24,8 +24,9 @@ This is a project that is meant to learn best in industry practices about Linear
  - The app first loads the location name and the location names are added using jinja template
 
 
-#### Changes that can be done
+#### Changes that can/have to be done
 - Making the UI better
+- Deploying on AWS
  
  
  
